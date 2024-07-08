@@ -1,20 +1,31 @@
-This is a Django-based Webpage which generates a set of images each time you reload it
-Installation
+This is a Django-based Webpage which generates a set of 64x64 images each time you reload it
 
-Clone the repository: git clone https://github.com/ThanmaiGR/TransportHub.git cd TransportHub
 
-Create a virtual environment: python -m venv env source env/bin/activate # On Windows, use env\Scripts\activate
+Clone the repository: 
+##
+    git clone https://github.com/ThanmaiGR/TransportHub.git
+
+Create a virtual environment: 
+##
+    python -m venv env source env/bin/activate 
+    
+On Windows, use 
+##
+    env\Scripts\activate
 
 Install dependencies: 
     
 ##
     pip install -r requirements.txt
+
+Install Pytorch from this link
+https://pytorch.org/
     
-download the model from
+Download the model from
 
 https://drive.google.com/file/d/1ov6GKLN6rxJZvaL4aCVuZqBwEDYC4AN9/view?usp=drive_link
 
-and add it to
+Add the model to
 
 display/generator/
 
