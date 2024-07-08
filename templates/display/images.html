@@ -1,0 +1,32 @@
+{%  load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .container {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        {#gap: 10px; #}
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+<body>
+    <h2> These Images Are Generated Using a GAN(Generative Adversarial Network) </h2>
+    <div class="container">
+        {%  for image in img_urls %}
+            <img src="{%  static image %}" alt="image">
+        {%  endfor %}
+    </div>
+
+</body>
+</html>
