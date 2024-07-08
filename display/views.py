@@ -1,15 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from django.conf import settings
 from . import functions
 import matplotlib
 import matplotlib.pyplot as plt
 import os
-import cv2
 matplotlib.use('Agg')
 
 # Create your views here.
-
 
 
 def create(request):
